@@ -10,7 +10,7 @@ class ExecutionTimer
     status, headers, body = @app.call(env)
     request_time = clock_time - start_time
 
-    body << "\n#{request_time}"
+    body << "\nRequest took #{request_time * 1_000_000} ms"
     [status, headers, body]
   end
 
