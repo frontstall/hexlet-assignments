@@ -1,0 +1,9 @@
+bulletin1:
+  id: 1
+  title: bulletin number one
+  body: Сиреневый туман над нами проплывает
+
+bulletin2:
+  id: 2
+  title: Продам гараж
+  body: Мопед не мой, я просто разместил объяву
