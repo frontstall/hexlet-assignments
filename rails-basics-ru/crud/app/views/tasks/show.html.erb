@@ -1,0 +1,7 @@
+<h1><%= @task[:name] %></h1>
+<p>Status: <%= @task[:status] %>, completed: <%= @task[:completed]%></p>
+<p>Created by: <%= @task[:creator] %> at <%= @task[:created_at].strftime('%T %-d-%-m-%Y') %></p>
+<p>Performer: <%= @task[:performer] || 'unset' %></p>
+<p><%= @task[:description] %></p>
+<p><%= link_to 'Edit', edit_task_path(@task) %></p>
+<p><%= link_to 'Delete', task_path(@task), data: { turbo_confirm: 'Are you sure?', turbo_method: :delete } %></p>

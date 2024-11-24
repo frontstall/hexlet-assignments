@@ -1,0 +1,27 @@
+<%= form_with model: @task do |form|  %>
+  <fieldset>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+    <% name_errors = @task.errors.full_messages_for(:name) %>
+    <%= name_errors.any? ? name_errors.join(', ') : nil %>
+  </fieldset>
+  <fieldset>
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+    <% description_errors = @task.errors.full_messages_for(:description) %>
+    <%= description_errors.any? ? description_errors.join(', ') : nil %>
+  </fieldset>
+  <fieldset>
+    <%= form.label :creator %>
+    <%= form.text_field :creator %>
+    <% creator_errors = @task.errors.full_messages_for(:creator) %>
+    <%= creator_errors.any? ? creator_errors.join(', ') : nil %>
+  </fieldset>
+  <fieldset>
+    <%= form.label :performer %>
+    <%= form.text_field :performer %>
+    <% performer_errors = @task.errors.full_messages_for(:performer) %>
+    <%= performer_errors.any? ? performer_errors.join(', ') : nil %>
+  </fieldset>
+  <%= form.submit %>
+<% end %>

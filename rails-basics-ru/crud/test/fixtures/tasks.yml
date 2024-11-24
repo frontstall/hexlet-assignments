@@ -1,0 +1,52 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  status: MyString
+  creator: MyString
+  performer: MyString
+  completed: false
+
+two:
+  name: MyString
+  description: MyText
+  status: MyString
+  creator: MyString
+  performer: MyString
+  completed: false
+
+task_without_name:
+  description: <%= Faker::Lorem.paragraph %>
+  status: <%= Faker::Lorem.word %>
+  creator: <%= Faker::Name.name %>
+  performer: <%= Faker::Name.name %>
+  completed: <%= Faker::Boolean.boolean %>
+
+task_without_status:
+  name: <%= Faker::Lorem.sentence %>
+  description: <%= Faker::Lorem.paragraph %>
+  creator: <%= Faker::Name.name %>
+  performer: <%= Faker::Name.name %>
+  completed: <%= Faker::Boolean.boolean %>
+
+task_without_creator:
+  name: <%= Faker::Lorem.sentence %>
+  description: <%= Faker::Lorem.paragraph %>
+  status: <%= Faker::Lorem.word %>
+  performer: <%= Faker::Name.name %>
+  completed: <%= Faker::Boolean.boolean %>
+
+task_without_performer:
+  name: <%= Faker::Lorem.sentence %>
+  description: <%= Faker::Lorem.paragraph %>
+  status: <%= Faker::Lorem.word %>
+  creator: <%= Faker::Name.name %>
+  completed: <%= Faker::Boolean.boolean %>
+
+task_without_completed:
+  name: <%= Faker::Lorem.sentence %>
+  description: <%= Faker::Lorem.paragraph %>
+  status: <%= Faker::Lorem.word %>
+  creator: <%= Faker::Name.name %>
+  performer: <%= Faker::Name.name %>
