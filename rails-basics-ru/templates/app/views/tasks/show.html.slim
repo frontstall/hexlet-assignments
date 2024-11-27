@@ -1,0 +1,25 @@
+h1 = @task.name
+p = @task.description
+p
+  ' created:
+  = @task.created_at.strftime('%T %-d-%-m-%Y')
+
+p
+  ' created by
+  = @task.creator
+
+- unless @task.performer.empty?
+  p
+    ' performer:
+    = @task.performer
+
+p
+  ' status:
+  = @task.status
+
+p
+  ' completed:
+  = @task.completed
+
+div = link_to 'Edit', edit_task_path
+div = link_to 'Delete', task_path(@task), data: { turbo_confirm: 'Are you sure?', turbo_method: :delete }

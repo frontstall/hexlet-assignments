@@ -7,3 +7,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'faker'
+
+50.times do
+  Task.create({
+                name: Faker::Lorem.sentence,
+                description: Faker::Lorem.paragraph,
+                status: %i[opened in_progress closed].sample,
+                creator: Faker::Movies::BackToTheFuture.character,
+                performer: Faker::Movies::BackToTheFuture.character,
+                completed: Faker::Boolean.boolean
+              })
+end

@@ -1,0 +1,39 @@
+h1 Edit task
+= form_with model: @task do |form|
+  fieldset
+    div = form.label :name
+    div = form.text_field :name
+    - name_errors = @task.errors.full_messages_for(:name)
+    - if name_errors
+      = name_errors.join(', ')
+  fieldset
+    div = form.label :description
+    div = form.text_field :description
+    - name_errors = @task.errors.full_messages_for(:description)
+    - if name_errors
+      = name_errors.join(', ')
+  fieldset
+    div = form.label :creator
+    div = form.text_field :creator
+    - name_errors = @task.errors.full_messages_for(:creator)
+    - if name_errors
+      = name_errors.join(', ')
+  fieldset
+    div = form.label :performer
+    div = form.text_field :performer
+    - name_errors = @task.errors.full_messages_for(:performer)
+    - if name_errors
+      = name_errors.join(', ')
+  fieldset
+    div
+      = form.label :completed
+      |> :
+      = form.check_box :completed
+  fieldset
+    div = form.label :status
+    div = form.select :status, [['opened', :opened], ['in progress', :in_progress], ['closed', :closed]]
+
+  div = form.label :status 
+  = form.submit
+
+  = @task.errors.full_messages.join(', ')

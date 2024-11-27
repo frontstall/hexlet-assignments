@@ -1,0 +1,29 @@
+h1 New task
+= form_with model: @task do |form|
+  fieldset
+    div = form.label :name
+    div = form.text_field :name
+    - name_errors = @task.errors.full_messages_for(:name)
+    - if name_errors
+      = name_errors.join(', ')
+
+    div = form.label :description
+    div = form.text_field :description
+    - name_errors = @task.errors.full_messages_for(:description)
+    - if name_errors
+      = name_errors.join(', ')
+
+    div = form.label :creator
+    div = form.text_field :creator
+    - name_errors = @task.errors.full_messages_for(:creator)
+    - if name_errors
+      = name_errors.join(', ')
+
+    div = form.label :performer
+    div = form.text_field :performer
+    - name_errors = @task.errors.full_messages_for(:performer)
+    - if name_errors
+      = name_errors.join(', ')
+  = form.submit
+
+  = @task.errors.full_messages.join(', ')
