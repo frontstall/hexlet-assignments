@@ -1,0 +1,8 @@
+.container.mb-5
+  = link_to 'New post', new_post_path, class: %w[btn btn-primary]
+.list-group
+  - @posts.each do |post|
+    - title = "#{post.created_at.strftime('%T %-d-%-m-%Y')} #{post.title}"
+    = link_to title,
+      post,
+      class: %w[list-group-item-action list-group-item]
