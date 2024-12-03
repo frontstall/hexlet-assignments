@@ -1,0 +1,14 @@
+= content_for :title do
+  = 'Tasks'
+
+.card-group
+  - @tasks.each do |t|
+    .card
+      .card-body
+        h5.card-title = link_to t.name, t
+        p.card-text = t.description
+      .card-footer
+        small.text-body-secondary created at:
+        =< t.created_at
+
+= link_to 'New Task', new_task_path, class: 'btn btn-primary'

@@ -1,0 +1,16 @@
+= content_for :title do
+  = @task.name
+
+.card
+  .card-body
+    h5.card-title = @task.name
+    p.card-text = @task.description
+    p.card-text = @task.status.name
+    p.card-text = @task.user.name
+  .card-footer
+    small.text-body-secondary
+    =< @task.created_at
+
+.d-flex
+  = link_to 'Edit', edit_task_path(@task), class: 'btn btn-outline-primary me-2'
+  = link_to 'Back', :back, class: 'btn btn-outline-primary'
