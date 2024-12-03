@@ -2,7 +2,9 @@
 # BEGIN
 one:
   name: John Frusciante
+  id: 1
 
 two:
   name: Flea
+  id: 2
 # END

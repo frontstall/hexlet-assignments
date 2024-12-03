@@ -2,10 +2,13 @@
 # BEGIN
 opened:
   name: opened
+  id: 1
 
 closed:
   name: closed
+  id: 2
 
 in_progress:
   name: in progress
+  id: 3
 # END
