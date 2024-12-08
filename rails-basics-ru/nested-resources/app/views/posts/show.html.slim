@@ -3,9 +3,17 @@
 p
   strong.me-2 Body:
   = @post.body
-/ BEGIN
+  / BEGIN
+  - @post.post_comments.each do |comment|
+    p = comment.body
+    = link_to 'Edit', edit_comment_path(comment)
+    = link_to 'Delete', comment_path(comment),
+      data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }
 
-/ END
+  = render 'posts/comments/form',
+    comment: @post.post_comments.build,
+    url: post_comments_path(@post)
+  / END
 hr
 
 .d-flex
