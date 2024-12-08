@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   # BEGIN
   resources :posts do
-    resources :comments, shallow: true, module: :posts
+    resources :comments, module: :posts
   end
   # END
 end

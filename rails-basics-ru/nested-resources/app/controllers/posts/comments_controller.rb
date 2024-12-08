@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class Posts::CommentsController < Posts::ApplicationController
   before_action :set_comment, only: %i[edit update destroy]
-  before_action :set_post, only: %i[create]
+  before_action :set_post, only: %i[edit create update destroy]
 
   def create
     @comment = @post.post_comments.build(comment_params)
@@ -32,7 +34,7 @@ class Posts::CommentsController < Posts::ApplicationController
   private
 
   def set_comment
-    @comment = Comment.find(params[:id])
+    @comment = PostComment.find(params[:id])
   end
 
   def set_post

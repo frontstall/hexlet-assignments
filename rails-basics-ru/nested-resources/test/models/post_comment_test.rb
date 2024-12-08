@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: post_comments
@@ -16,7 +18,7 @@
 #
 #  post_id  (post_id => posts.id)
 #
-require "test_helper"
+require 'test_helper'
 
 class PostCommentTest < ActiveSupport::TestCase
   # test "the truth" do

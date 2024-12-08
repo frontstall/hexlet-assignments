@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # == Schema Information
 #
 # Table name: post_comments
@@ -17,7 +19,7 @@
 #  post_id  (post_id => posts.id)
 #
 class PostComment < ApplicationRecord
-  belongs_to :post, dependent: :destroy
+  belongs_to :post
 
   validates :body, presence: true, length: { minimum: 5, maximum: 300 }
 end

@@ -12,7 +12,7 @@
 #
 class Post < ApplicationRecord
   # BEGIN
-  has_many :post_comments
+  has_many :post_comments, dependent: :destroy
   # END
 
   validates :title, presence: true
