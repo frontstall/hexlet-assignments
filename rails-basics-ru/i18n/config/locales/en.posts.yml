@@ -1,0 +1,28 @@
+en:
+  posts:
+    # BEGIN
+    index:
+      posts: Posts
+      title: Title
+      comments_count:
+        zero: No comments
+        one: "%{count} comment"
+        other: "%{count} comments"
+      show: Show
+      edit: Edit
+      destroy: Delete
+      confirmation: Are you sure?
+      new_post: New post
+    new:
+      title: New post
+    # END
+
+    comments:
+      edit:
+        title: Editing comment
+
+      create:
+        success: Comment was created.
+
+      update:
+        success: Comment was updated.

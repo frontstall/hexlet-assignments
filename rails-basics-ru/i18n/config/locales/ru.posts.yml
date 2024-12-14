@@ -1,0 +1,30 @@
+---
+ru:
+  posts:
+    # BEGIN
+    index:
+      posts: Посты
+      title: Название
+      comments_count:
+        zero: нет комментариев
+        one: "%{count} комментарий"
+        few: "%{count} комментария"
+        many: "%{count} комментариев"
+      show: Показать
+      edit: Править
+      destroy: Удалить
+      confirmation: Точно удалить?
+      new_post: Новый пост
+    new:
+      title: Новый пост
+    # END
+
+    comments:
+      edit:
+        title: Изменить комментарий
+
+      create:
+        success: Комментарий создан.
+
+      update:
+        success: Комментарий обновлен.

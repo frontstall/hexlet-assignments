@@ -1,0 +1,9 @@
+ru:
+  layouts:
+    application:
+      hexlet_title:
+        html: "&copy; Хекслет, %{year}"
+    shared:
+      nav:
+        posts: "Посты"
+        home: "Главная"
