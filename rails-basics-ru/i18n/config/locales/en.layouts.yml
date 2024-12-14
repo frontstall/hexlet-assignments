@@ -32,9 +32,10 @@
 en:
   layouts:
     application:
-      hexlet_title:
-        html: "&copy; Hexlet, %{year}"
+      hexlet_title: "Hexlet, %{year}"
+
     shared:
       nav:
-        posts: "Posts"
-        home: "Home"
+        posts: Posts
+        home: Home
+        hexlet_logo: Hexlet

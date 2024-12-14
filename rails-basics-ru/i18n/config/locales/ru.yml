@@ -5,5 +5,3 @@ ru:
   destroy_confirmation: Точно удалить?
   back: Назад
   home_page: Домашняя страница
-  errors:
-    format: "%{message}"

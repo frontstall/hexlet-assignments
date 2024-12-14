@@ -11,7 +11,7 @@ ru:
     placeholders:
       # BEGIN
       post:
-        title: Не очень длинный
+        title: Название
         body: Не сдерживайте себя
       # END
       post_comment:

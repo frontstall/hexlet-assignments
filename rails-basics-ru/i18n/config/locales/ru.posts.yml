@@ -10,13 +10,25 @@ ru:
         one: "%{count} комментарий"
         few: "%{count} комментария"
         many: "%{count} комментариев"
+        other:
       show: Показать
       edit: Править
       destroy: Удалить
       confirmation: Точно удалить?
       new_post: Новый пост
+    show:
+      body: Содержимое поста
+      comments: Комментарии
     new:
       title: Новый пост
+    edit:
+      title: Изменить пост
+    update:
+      success: Пост обновлен.
+    create:
+      success: Пост создан.
+    destroy:
+      success: Пост удален.
     # END
 
     comments:

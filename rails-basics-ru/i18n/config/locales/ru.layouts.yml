@@ -1,0 +1,9 @@
+ru:
+  layouts:
+    application:
+      hexlet_title: "Хекслет, %{year}"
+    shared:
+      nav:
+        posts: Посты
+        home: Домой
+        hexlet_logo: Hexlet

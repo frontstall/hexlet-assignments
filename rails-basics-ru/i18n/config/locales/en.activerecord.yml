@@ -20,7 +20,7 @@ en:
           attributes:
             # BEGIN
             title:
-              blank: Must have been love
+              blank: should be filled
             body:
               blank: But its over now
             # END

@@ -12,9 +12,20 @@ en:
       edit: Edit
       destroy: Delete
       confirmation: Are you sure?
-      new_post: New post
+      new_post: New Post
+    show:
+      body: Post content
+      comments: Comments
     new:
-      title: New post
+      title: New Post
+    edit:
+      title: Edit post
+    update:
+      success: Post was updated.
+    create:
+      success: Post was created.
+    destroy:
+      success: Post was destroyed.
     # END
 
     comments:

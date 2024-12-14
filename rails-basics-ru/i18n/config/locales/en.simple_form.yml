@@ -10,7 +10,7 @@ en:
     placeholders:
       # BEGIN
       post:
-        title: Not too long
+        title: Enter post title
         body: Feel free to express yourself
       # END
       post_comment:

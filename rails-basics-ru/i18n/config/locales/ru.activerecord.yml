@@ -9,7 +9,7 @@ ru:
     attributes:
       post:
         # BEGIN
-        title: Заголовок
+        title: Название
         body: Текст поста
         # END
       post/comment:
@@ -21,7 +21,7 @@ ru:
           attributes:
             # BEGIN
             title:
-              blank: Придумайте заголовок
+              blank: Должно быть заполнено
             body:
               blank: Напишите текст
             # END

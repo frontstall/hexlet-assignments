@@ -36,5 +36,3 @@ en:
   destroy_confirmation: Are you sure?
   back: Back
   home_page: Home page
-  errors:
-    format: "%{message}"
