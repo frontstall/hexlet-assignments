@@ -7,19 +7,12 @@ class SetLocaleMiddleware
 
   # BEGIN
   def call(env)
-    status, headers, response = @app.call(env)
-
     accept_language = env['HTTP_ACCEPT_LANGUAGE']
     locale = get_locale_from_accept_language_header(accept_language)
+
     I18n.locale = locale
 
-    puts '=' * 25
-    puts I18n.locale
-    puts '=' * 25
-
-    headers['Content-Language'] = I18n.locale.to_s
-
-    [status, headers, response]
+    @app.call(env)
   end
 
   private
