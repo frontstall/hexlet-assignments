@@ -31,7 +31,7 @@ class SetLocaleMiddleware
       I18n.available_locales.map(&:to_s).include? lang
     end
 
-    user_lang || default_locale
+    user_lang || I18n.default_locale
   end
   # END
 end

@@ -3,7 +3,7 @@
 Rails.application.routes.draw do
   # BEGIN
   root 'home#index'
-  scope ':locale', locale: /#{I18n.available_locales.join('|')}/ do
+  scope '(:locale)', locale: /#{I18n.available_locales.join('|')}/ do
     resources :posts do
       scope module: :posts do
         resources :comments
